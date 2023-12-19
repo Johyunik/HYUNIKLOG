@@ -46,7 +46,7 @@ jobs:
           username : ${{ secrets.DOCKERHUB_USERNAME }}      #레포지토리 시크릿 키값에 도커허브 아이디
           password : ${{ secrets.DOCKERHUB_TOKEN }}         #이전에 발급한 토큰값
     - name : 도커 퍼블리싱
-      run : docker push hyunik/weatherfit_board      #빌드한 이미지 도커허브에 push
+      run : docker push hyunik/hyunik_log      #빌드한 이미지 도커허브에 push
 
     - name : ec2 접속 및 애플리케이션 실행
       uses : appleboy/ssh-action@v0.1.6
